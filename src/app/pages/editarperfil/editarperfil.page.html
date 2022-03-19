@@ -1,0 +1,24 @@
+<ion-content class="background-image" >
+
+  <ion-header class="ion-no-border">
+    <ion-toolbar color="primary">
+      <ion-title>Editar Perfíl</ion-title>
+      <ion-buttons  slot="start">
+        <ion-menu-button menu="main-menu"></ion-menu-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+
+<ion-content class="ion-padding">
+
+  <form class="formulario">
+    <app-input label="Nombre"></app-input>
+    <app-input label="Apellidos" type="text"></app-input>
+    <app-input label="Telefono" type="number"></app-input>
+    <app-input label="Confirmar contraseña" type="password"></app-input>
+    <app-input label="Correo electronico" type="email"></app-input>
+    </form>
+    <ion-button expand="round" shape="round" routerLink="/perfil">Guardar </ion-button>
+
+</ion-content>

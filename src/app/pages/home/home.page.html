@@ -1,0 +1,219 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color='#145DA0' no-border>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-title class="titulo">Siscoin</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <img src="../../assets/notification.svg" />
+      </ion-button>
+      <!-- <ion-button class="bordered" routerLink="/search">
+        <ion-icon name="search-sharp"></ion-icon>
+      </ion-button> -->
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<!-- MENU DESLIZABLE-->
+<!-- <ion-toolbar color='#145DA0'>
+  <ion-segment>
+    <ion-segment-button value="inicio">
+      <ion-label>Menú Principal</ion-label>
+    </ion-segment-button>
+
+  </ion-segment>
+</ion-toolbar> -->
+
+
+
+<ion-content [fullscreen]="true">
+  <div class="banner">
+    <img src="../../assets/ondas-banner.png" />
+
+    <div class="caption ion-padding">
+      ¡Mejora tus ventas <br>
+      con nuestras estrategias!
+    </div>
+
+    <div class="search">
+      <ion-item lines="none" class="ion-no-padding">
+        <ion-icon slot="start" name="search-outline"></ion-icon>
+        <ion-input placeholder="Buscar productos"></ion-input>
+        <ion-button slot='end'>
+          <img src="../../assets/filter.svg" />
+        </ion-button>
+      </ion-item>
+    </div>
+  </div>
+
+  <div class="title">
+    <h2>¡Productos a poner en ofertas!</h2>
+
+    <p>Ver más</p>
+  </div>
+
+  <div class="event-slider">
+    <ion-slides [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }" class="default-left-padding">
+      <ion-slide>
+        <ion-col class="ion-text-left">
+          <ion-card>
+            <ion-card-header class="ion-no-padding">
+              <img src="../../assets/events/verano.svg" />
+            </ion-card-header>
+
+            <ion-card-content>
+              <p class="date">Verano</p>
+              <h2 class="eventname">Ropa fresca, trajes de baño y más</h2>
+              <p class="location">
+                <ion-icon name="location"></ion-icon>Orizaba,Ver
+              </p>
+
+              <div class="additional-info">
+                <!-- <div class="attendees">
+                  <img src="../../assets/persons/person1.svg" />
+                  <img src="../../assets/persons/person2.svg" />
+                  <img src="../../assets/persons/person3.svg" />
+                  <img src="../../assets/persons/person4.svg" />
+                  <div class="count">
+                    <img src="../../assets/persons/person-placeholder.svg" />
+
+                    <p>+7</p>
+                  </div>
+                </div> -->
+
+                <p class="time">Junio, Julio, Agosto</p>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+      <ion-slide>
+        <ion-col class="ion-text-left">
+          <ion-card>
+            <ion-card-header class="ion-no-padding">
+              <img src="../../assets/events/cold.svg" />
+            </ion-card-header>
+
+            <ion-card-content>
+              <p class="date">Verano</p>
+              <h2 class="eventname">Promociones de ropa invernal</h2>
+              <p class="location">
+                <ion-icon name="location"></ion-icon>Orizaba,Ver
+              </p>
+
+              <div class="additional-info">
+                <!-- <div class="attendees">
+                  <img src="../../assets/persons/person1.svg" />
+                  <img src="../../assets/persons/person2.svg" />
+                  <img src="../../assets/persons/person3.svg" />
+                  <img src="../../assets/persons/person4.svg" />
+
+                </div> -->
+
+                <p class="time">Junio, Julio, Agosto</p>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div class="default-top-padding title">
+    <h2>Productos populares</h2>
+
+    <p>Ver más</p>
+  </div>
+
+  <!-- <div class="live-event">
+    <img src="../../assets/events/event3.svg" />
+
+    <div class="info">
+      <div class="content">
+        <h6>World Art Day</h6>
+
+        <p class="stats">
+          <span>
+            <ion-icon name="eye"></ion-icon>&nbsp;2.3K
+          </span><span>
+            <ion-icon name="heart"></ion-icon>&nbsp;3758
+          </span>
+        </p>
+
+        <p class="location">
+          <ion-icon name='location'></ion-icon>Caracas, Venezuela
+        </p>
+
+        <div class="additional-info">
+          <div class="attendees">
+            <img src="../../assets/persons/person1.svg" />
+            <img src="../../assets/persons/person2.svg" />
+            <img src="../../assets/persons/person3.svg" />
+            <img src="../../assets/persons/person4.svg" />
+            <div class="count">
+              <img src="../../assets/persons/person-placeholder.svg" />
+
+              <p>+3</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="indicator">
+        <div>Live</div>
+      </div>
+    </div>
+  </div>  -->
+
+
+  <div class="event-slider">
+    <ion-slides [options]="{ slidesPerView: 'auto', zoom: false, grabCursor: true }" class="default-left-padding">
+      <ion-slide>
+        <ion-col class="ion-text-left">
+          <ion-card>
+            <ion-card-header class="ion-no-padding">
+              <img src="../../assets/events/sport.svg" />
+            </ion-card-header>
+
+            <ion-card-content>
+              <p class="date">Verano</p>
+              <h2 class="eventname">Ropa deportiva</h2>
+              <p class="location">
+                <ion-icon name="location"></ion-icon>Orizaba,Ver
+              </p>
+
+              <div class="additional-info">
+
+                <p class="time">Junio, Julio, Agosto</p>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+      <ion-slide>
+        <ion-col class="ion-text-left">
+          <ion-card>
+            <ion-card-header class="ion-no-padding">
+              <img src="../../assets/events/urban.svg" />
+            </ion-card-header>
+
+            <ion-card-content>
+              <p class="date">Verano</p>
+              <h2 class="eventname">Ropa urbana</h2>
+              <p class="location">
+                <ion-icon name="location"></ion-icon>Orizaba,Ver
+              </p>
+
+              <div class="additional-info">
+
+                <p class="time">Junio, Julio, Agosto</p>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+</ion-content>

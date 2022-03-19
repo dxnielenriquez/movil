@@ -1,0 +1,32 @@
+<ion-content class="ion-padding">
+
+  <ion-header class="ion-no-border">
+    <ion-toolbar color='#145DA0'>
+      <ion-buttons slot="start">
+        <ion-back-button text="Regresar" defaultHref="/home" mode="ios"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <h3 class="ion-text-center">Recomendaciones estadísticas</h3>
+
+  <div class="info-perfil">
+    <ion-list lines="none" class="disable">
+
+      <div class="ion-padding">
+        <ion-card>
+          <!-- <ion-card-header>
+            Line Chart
+          </ion-card-header> -->
+          <ion-card-content>
+            <canvas #lineCanvas style="position: relative; height:20vh; width:40vw"></canvas>
+          </ion-card-content>
+        </ion-card>
+      </div>
+
+      <ion-textarea disabled readonly rows="5" cols="5"
+        value="En base a la grafica, le recomendamos que usted venda el próximo mes lo siguiente...">
+      </ion-textarea>
+
+    </ion-list>
+  </div>
+</ion-content>

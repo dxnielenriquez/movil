@@ -1,0 +1,7 @@
+{
+  "name": "appCupon",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

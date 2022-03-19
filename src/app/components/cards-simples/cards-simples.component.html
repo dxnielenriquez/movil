@@ -1,0 +1,35 @@
+
+
+<ion-content>
+  <h3 class="ion-text-center">Análisis de ventas</h3>
+ 
+  <div class="info-perfil">
+    <ion-list lines="none">
+      <ion-item>
+        <ion-label>
+          <p>Último análisis</p>  
+        </ion-label>
+      </ion-item> 
+
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-chip class="chip">
+              <ion-icon name="search-outline"></ion-icon>
+              <ion-input placeholder="Buscar"></ion-input>
+            </ion-chip>
+          </ion-col>
+          <ion-col>
+            <img src="assets/img/pdf-icon.png" width="80px">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <!-- intento de hacer la grafica -->
+       <div class="chart-container">
+        <canvas id="myChart"></canvas>
+      </div> 
+
+    </ion-list>
+  </div>
+</ion-content>

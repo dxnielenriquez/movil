@@ -1,0 +1,52 @@
+<ion-content class="background-image">
+
+  <ion-header class="ion-no-border">
+    <ion-toolbar color='#145DA0'>
+      <ion-buttons slot="start">
+        <ion-back-button text="Regresar" defaultHref="/home" mode="ios"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <h3 class="ion-text-center">Análisis de ventas</h3>
+
+    <div class="info-perfil">
+      <ion-list lines="none" class="disable">
+
+        <ion-label class="disable">
+          <p>Último análisis</p>
+        </ion-label>
+
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-chip class="chip">
+                <ion-icon name="search-outline"></ion-icon>
+                <ion-input placeholder="Buscar"></ion-input>
+              </ion-chip>
+            </ion-col>
+            <ion-col>
+
+              <img src="assets/img/pdf.png" class="pdf">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+        <div class="ion-padding">
+          <ion-card>
+            <ion-card-header>
+              Análisis Predictivo
+            </ion-card-header>
+            <ion-card-content>
+              <canvas #barCanvas style="position: relative; height:20vh; width:40vw"></canvas>
+            </ion-card-content>
+          </ion-card>
+        </div>
+
+        <ion-textarea disabled readonly rows="5" cols="5"
+          value="Deacuerdo con el análisis que se muestra en la gráfica se recomienda que para el próximo mes hagas...">
+        </ion-textarea>
+
+      </ion-list>
+    </div>
+  </ion-content>

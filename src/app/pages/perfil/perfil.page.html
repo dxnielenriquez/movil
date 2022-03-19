@@ -1,0 +1,51 @@
+<ion-content class="background-image" >
+
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-title>Perfíl</ion-title>
+    <ion-buttons  slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+  <ion-avatar class="perfil" >
+    <img src="assets/img/profile.svg" class="pdf">
+  </ion-avatar>
+
+  <div class="info-perfil" >
+    <ion-list  >
+      <ion-item>
+        <ion-label>
+          <h1 >Datos</h1>
+          <p></p>
+          <h1>Nombre</h1>
+          <p>Daniel Enriquez Montalvo </p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <h1>Correo electrónico</h1>
+          <p>dany12@gmail.com</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <h1>Telefono</h1>
+          <p>271-171-09-11</p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>
+          <h1>Redes Sociales</h1>
+          <p><ion-icon class="icon" slot="start" name="logo-facebook"> </ion-icon> <ion-icon class="insta" name="logo-instagram"></ion-icon><ion-icon class="tw"
+             name="logo-twitter"></ion-icon></p>
+        </ion-label>
+      </ion-item>
+      <ion-button expand="round" shape="round" routerLink="/editarperfil">Editar </ion-button>
+  
+     
+    </ion-list>
+</div>
+</ion-content>

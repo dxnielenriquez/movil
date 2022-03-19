@@ -1,0 +1,55 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="Regresar" defaultHref="/productos" mode="ios"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h1 class="ion-text-center">Editar producto</h1>
+
+
+  <form class="formulario">
+    <p>Nombre del producto </p> <br>
+    <app-input type="text"></app-input>
+    <p>Cantidad </p> <br>
+    <app-input type="text"></app-input>
+    <p>Precio compra </p> <br>
+    <app-input type="text"></app-input>
+    <p>Precio venta </p> <br>
+    <app-input type="number"></app-input>
+  </form>
+
+  <ion-item-divider class="disable"></ion-item-divider>
+
+  <ion-row>
+    <ion-col class="texto1" size="10">
+      <p class="ion-text-center"> <br>Foto producto</p>
+    </ion-col>
+    <ion-col size="6">
+      <ion-icon class="camera" name="camera-outline"></ion-icon>
+    </ion-col>
+    <ion-col size="8">
+    </ion-col>
+  </ion-row>
+
+  <ion-item-divider class="disable"></ion-item-divider>
+
+  <ion-row>
+    <ion-col size="2">
+      <p class="disable">x</p>
+    </ion-col>
+    <ion-col class="texto2" size="8">
+      <p class="ion-text-center">Codigo QR del <br> producto</p>
+    </ion-col>
+    <ion-col size="5">
+      <ion-icon class="camera2" name="camera-outline" routerLink="/registroproductoqr"></ion-icon>
+    </ion-col>
+  </ion-row>
+
+  <div class="centrado">
+    <ion-button shape="round" routerLink="/productos">Editar</ion-button>
+  </div>
+
+</ion-content>

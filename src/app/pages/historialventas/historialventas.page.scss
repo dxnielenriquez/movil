@@ -1,0 +1,57 @@
+ion-content {
+  --background: #34b0d2 url('../../../assets/img/ondas.png') no-repeat center top fixed;
+  color: #000000;
+
+}
+
+.chip {
+  width: 200px;
+  height: 38px;
+  align-items: center;
+
+}
+
+.tabla {
+  margin-right: 0%;
+}
+
+.chart-container {
+  position: relative;
+  margin: auto;
+
+}
+
+ion-col>div {
+  background-color: #ffffff00;
+  border: solid 1px rgba(5, 5, 5, 0);
+  padding: px;
+
+}
+
+.pdf {
+  font-size: small;
+  width: 70px;
+  height: 70px;
+  margin-left: 10%;
+  margin-top: 15%;
+}
+
+.excel {
+  font-size: small;
+  width: 60px;
+  height: 60px;
+  margin-top: 2%;
+  margin-top: 16%;
+}
+
+.eye {
+  color: #295896;
+}
+
+.edit {
+  color: #295896;
+}
+
+.trash {
+  color: #295896;
+}

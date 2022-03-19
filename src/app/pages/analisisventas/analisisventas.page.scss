@@ -1,0 +1,53 @@
+.info-perfil {
+  margin-top: 1.5rem;
+  align-items: center;
+
+  // h1{
+  //     position: relative;
+  //     padding-right: 25px;
+  //      .edit_data,.save_btn{
+  //          position: absolute;
+  //          right: 0;
+  //          top: 0;
+  //          height: 20px;
+  //          line-height: 20px;
+  //          width: 25px;
+  //          text-align: center;
+  //     }    
+  // }
+}
+
+p {
+  color: black;
+}
+
+.chip {
+  width: 250px;
+  height: 38px;
+  align-items: center;
+}
+
+.chart-container {
+  position: relative;
+  margin: auto;
+}
+
+
+.disable {
+  background-color: #4a4a4a00;
+  border-color: #4a4a4a00;
+}
+
+ion-content {
+  --background: #34b0d2 url('../../../assets/img/ondas.png') no-repeat center top fixed;
+  color: #000000;
+
+}
+
+.pdf {
+  font-size: small;
+  width: 65px;
+  height: 65px;
+  margin-left: 10%;
+
+}

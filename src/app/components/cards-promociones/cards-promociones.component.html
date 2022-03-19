@@ -1,0 +1,20 @@
+<div class="contenido">
+<ion-title>Promociones El buen sabor</ion-title>
+  <div class="slider">
+    <ion-slides [options]="{slidesPerView: 'auto', zoom:false, grabCursor: true }" class="default-left-padding">
+      <ion-slide  *ngFor="let informacion of info"> 
+        <ion-col class="ion-text-left">
+          <ion-card>
+            <ion-card-header class="ion-no-padding">
+              <img src="{{ informacion.imagen }}">
+            </ion-card-header>
+            <ion-card-content>
+              <h2>{{informacion.promocion}}</h2>
+              <p>{{informacion.fecha}}</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-slide>
+    </ion-slides>
+  </div>
+</div>

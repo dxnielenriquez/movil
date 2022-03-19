@@ -1,0 +1,26 @@
+<ion-app>
+  <ion-menu menuId="main-menu" content-id="main" >
+      <ion-content>
+        <div class="menu-lateral"></div>
+        <div class="menu-contenido">
+          
+          <img  src="assets/img/profile.svg">
+          <ion-label>
+            <h2>Daniel Enriquez Montalvo</h2>
+            <p>Daniel123</p>
+          </ion-label>
+        </div>
+        <ion-list lines="none">
+          <ion-menu-toggle *ngFor="let p of appPages; let i = index">
+            <ion-item routerDirection="root" [routerLink]="[p.url]">
+              <ion-icon slot="start" [md]="p.icon"></ion-icon>
+              <ion-label>{{ p.title }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
+
+

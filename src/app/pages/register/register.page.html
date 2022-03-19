@@ -1,0 +1,44 @@
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+<ion-content class="background-image">
+
+  <ion-header class="ion-no-border">
+    <ion-toolbar color='#145DA0'>
+      <ion-buttons slot="start">
+        <ion-back-button text="Regresar" defaultHref="/login" mode="ios"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <h1>Regístrate</h1>
+    <!-- <img  src="assets/img/profile.svg"> -->
+    <div class="ion-padding">
+
+      <form [formGroup]="user" (ngSubmit)="register($event)">
+        <div class="wrap-input">
+          <input class="input" type="text" (focus)="focused[0] = true" (blur)="onBlur($event,0)"
+            formControlName="usuario" placeholder="Usuario" />
+        </div>
+        <div class="wrap-input">
+          <input class="input" type="email" (focus)="focused[1] = true" (blur)="onBlur($event,1)"
+            formControlName="correo" placeholder="Correo electrónico" />
+        </div>
+        <div class="wrap-input">
+          <input class="input" type="password" (focus)="focused[2] = true" (blur)="onBlur($event,2)"
+            formControlName="contrasena" placeholder="Contraseña" />
+        </div>
+        <div class="wrap-input">
+          <input class="input" type="password" (focus)="focused[3] = true" (blur)="onBlur($event,3)"
+            formControlName="confirmContrasena" placeholder="Confirmar contraseña" />
+        </div>
+        <div class="wrap-input">
+          <input class="input" type="text" (focus)="focused[4] = true" (blur)="onBlur($event,4)"
+            formControlName="empresa" placeholder="Empresa" />
+        </div>
+      </form>
+
+    </div>
+    <ion-button expand="block" shape="round" (click)="register($event)">Registrar</ion-button>
+
+  </ion-content>

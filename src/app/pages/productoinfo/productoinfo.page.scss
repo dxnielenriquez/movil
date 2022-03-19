@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin-top: 5%;
+  margin-bottom: 10px;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+div {
+  text-align: center;
+  margin: center;
+}
+
+img {
+  width: 50x;
+  height: 200px;
+  align-items: center;
+}
+
+ion-content {
+  --background: #34B0D2 url('../../../assets/img/ondas.png') no-repeat center top fixed;
+
+
+}
+
+
+.disable {
+  background-color: #4a4a4a00;
+  border-color: #4a4a4a00;
+  margin-top: 15%;
+}
+
+ion-item {
+  color: #000000;
+  --background: #4a4a4a00;
+}

@@ -1,0 +1,48 @@
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+<ion-content class="background-image">
+
+  <ion-header class="ion-no-border">
+    <ion-toolbar color='#145DA0'>
+      <ion-buttons slot="start">
+        <ion-back-button text="Regresar" defaultHref="/login" mode="ios"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+
+    <h1>Iniciar Sesión</h1>
+
+    <div class="text-center">
+      <img alt="homepage" class="avatar" src="assets/img/profile.svg">
+    </div>
+    <div class="ion-padding">
+
+      <form [formGroup]="user" (ngSubmit)="login($event)">
+        <div class="wrap-input">
+          <!--           <label position="floating" [ngClass]="focused[0] ? 'label-focused' : ''">Correo</label>
+ -->
+
+          <input class="input" type="email" (focus)="focused[0] = true" (blur)="onBlur($event,0)"
+            formControlName="correo" placeholder="Correo electrónico" />
+        </div>
+        <div class="wrap-input">
+          <!--           <label position="floating" [ngClass]="focused[1] ? 'label-focused' : ''">Contraseña</label>
+ -->
+          <input class="input" type="password" (focus)="focused[1] = true" (blur)="onBlur($event,1)"
+            formControlName="contrasena" placeholder="Contraseña " />
+        </div>
+      </form>
+      <div class="container-form-btn">
+
+        <ion-button expand="round" shape="round" (click)="login($event)">Iniciar sesión</ion-button>
+      </div>
+      <br />
+      <!--  <ion-checkbox> </ion-checkbox>
+
+      <h5>Recordar</h5> -->
+    </div>
+
+  </ion-content>
+</ion-content>
