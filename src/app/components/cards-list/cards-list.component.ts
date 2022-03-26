@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-cards-list',
@@ -7,10 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CardsListComponent implements OnInit {
 
-  @Input() info: any;
+  @Input() productos: any;
 
-  constructor() { }
+  constructor(private modalController: ModalController) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
+
+
 
 }

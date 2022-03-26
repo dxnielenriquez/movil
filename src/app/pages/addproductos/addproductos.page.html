@@ -9,11 +9,11 @@
 <ion-content class="ion-padding">
   <h1 class="ion-text-center">Registrar producto</h1>
 
-  <form>
-    <app-input label="Nombre del producto"></app-input>
-    <app-input label="Cantidad"></app-input>
-    <app-input label="Precio compra"></app-input>
-    <app-input label="Precio venta"></app-input>
+  <form [formGroup]="producto" (ngSubmit)="guardar($event)">
+    <app-input formControlName="producto" label="Nombre del producto"></app-input>
+    <app-input formControlName="cantidad" label="Cantidad"></app-input>
+    <app-input formControlName="precio_c" label="Precio compra"></app-input>
+    <app-input formControlName="precio_v" label="Precio venta"></app-input>
   </form>
 
   <ion-item-divider class="disable"></ion-item-divider>

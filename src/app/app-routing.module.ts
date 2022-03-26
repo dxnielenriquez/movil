@@ -13,6 +13,11 @@ const routes: Routes = [
   },
 
   {
+    path: 'producto-modal',
+    loadChildren: () => import('./producto-modal/producto-modal.module').then(m => m.ProducctoModalPageModule)
+  },
+
+  {
     path: 'editarperfil',
     loadChildren: () => import('./pages/editarperfil/editarperfil.module').then(m => m.EditarperfilPageModule)
   },
@@ -27,7 +32,7 @@ const routes: Routes = [
     loadChildren: () => import('./pages/registroqr/registroqr.module').then(m => m.RegistroqrPageModule)
   },
 
-    {
+  {
     path: 'recomendaciones',
     loadChildren: () => import('./pages/recomendaciones/recomendaciones.module').then(m => m.RecomendacionesPageModule)
   },
