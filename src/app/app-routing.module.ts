@@ -18,6 +18,12 @@ const routes: Routes = [
   },
 
   {
+    path: 'personal-modal',
+    loadChildren: () => import('./personal-modal/personal-modal.module').then(m => m.PersonalModalPageModule)
+  },
+
+
+  {
     path: 'editarperfil',
     loadChildren: () => import('./pages/editarperfil/editarperfil.module').then(m => m.EditarperfilPageModule)
   },
@@ -78,8 +84,8 @@ const routes: Routes = [
 
 
   {
-    path: 'historial',
-    loadChildren: () => import('./pages/historial/historial.module').then(m => m.HistorialPageModule)
+    path: 'personal',
+    loadChildren: () => import('./pages/personal/personal.module').then(m => m.PersonalPageModule)
   },
 
   {

@@ -1,0 +1,64 @@
+<ion-content class="background-image">
+  <ion-refresher slot="fixed" (ionRefresh)="recargar($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-header class="ion-no-border">
+    <ion-toolbar color='#145DA0'>
+      <ion-buttons slot="start">
+
+        <ion-back-button text="Regresar" defaultHref="/home" mode="ios"></ion-back-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button color="primary" (click)="addPersonal()">
+          Agregar
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+
+    <ion-title>Empleados</ion-title>
+
+
+  </ion-header>
+  <br>
+
+  <ion-content>
+    <div class="ion-text-center">
+      <ion-list>
+        <ion-item-sliding *ngFor="let personal of personal" #ionItemSliding>
+          <ion-item>
+
+            <div class="detalles">
+              <p>Nombre:
+                {{personal.nombre}}</p>
+            </div>
+
+            <div class="detalles">
+              <p>Apellido Paterno: {{personal.apellido_p}}</p>
+            </div>
+            <div class="detalles">
+              <p>Apellido Materno: {{personal.apellido_m}}</p>
+            </div>
+            <div class="detalles">
+              <p>Télefono: {{personal.telefono}}</p>
+            </div>
+            <div class="detalles">
+              <p>Correo: {{personal.correo}}</p>
+            </div>
+            <div class="detalles">
+              <p>Sueldo: {{personal.sueldo}}</p>
+            </div>
+          </ion-item>
+          <ion-item-options side="end">
+            <ion-item-options side="end">
+              <ion-item-option color="danger" (click)="removePersonal(personal.id_empleado)">
+                <ion-icon name="trash"></ion-icon>
+              </ion-item-option>
+              <ion-item-option color="success" (click)="updatePersonal(personal)">
+                Editar
+              </ion-item-option>
+            </ion-item-options>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-list>
+    </div>
+  </ion-content>

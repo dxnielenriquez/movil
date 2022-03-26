@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="" color="primary" mode="ios">
+      </ion-back-button> 
+    </ion-buttons> -->
+    <ion-buttons slot="end">
+      <ion-button color="danger" (click)="closeModal()">
+        Cerrar
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-capitalize">{{isUpdate ? 'Editar' : 'Agregar'}} productos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <ion-item>
+      <ion-label position="floating">Nombre del Nombre</ion-label>
+      <ion-input [(ngModel)]="data.producto" name="producto"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Cantidad</ion-label>
+      <ion-input [(ngModel)]="data.cantidad" name="cantidad"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Precio Compra</ion-label>
+      <ion-input [(ngModel)]="data.precio_c" name="precio_c"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Precio Venta</ion-label>
+      <ion-input [(ngModel)]="data.precio_v" name="precio_v"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Imagen</ion-label>
+      <ion-input [(ngModel)]="data.imagePath" name="imagePath"></ion-input>
+    </ion-item>
+
+    <div *ngIf="isUpdate">
+      <ion-item>
+        <ion-label position="floating">ID empresa</ion-label>
+        <ion-input [(ngModel)]="data.id_empresa.id_empresa" name="id_empresa"></ion-input>
+      </ion-item>
+    </div>
+
+    <div *ngIf="!isUpdate">
+      <ion-item>
+        <ion-label position="floating">ID empresa</ion-label>
+        <ion-input [(ngModel)]="data.id_empresa" name="id_empresa"></ion-input>
+      </ion-item>
+    </div>
+
+
+    <ion-button type="submit" fill="outline" expand="block" color="primary" class="ion-margin-top">
+      {{isUpdate ? 'Editar' : 'Agregar'}}</ion-button>
+  </form>
+</ion-content>

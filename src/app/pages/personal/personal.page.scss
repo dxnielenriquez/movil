@@ -1,0 +1,84 @@
+.chip {
+  width: 200px;
+  height: 38px;
+  align-items: center;
+
+}
+
+.tabla {
+  margin-right: 0%;
+}
+
+.chart-container {
+  position: relative;
+  margin: auto;
+
+}
+
+
+
+.pdf {
+  font-size: small;
+  width: 70px;
+  height: 70px;
+  margin-left: 10%;
+  margin-top: 15%;
+}
+
+.excel {
+  font-size: small;
+  width: 60px;
+  height: 60px;
+  margin-top: 2%;
+  margin-top: 16%;
+}
+
+.eye {
+  color: #295896;
+}
+
+.edit {
+  color: #295896;
+}
+
+.trash {
+  color: #295896;
+}
+
+.detalles {
+  text-align: left;
+  font-size: 11px;
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  border-bottom: 2px solid #eee;
+  margin-bottom: 10px;
+}
+
+.detalles h3 {
+  color: #151515;
+}
+
+
+.list-md {
+  background: #fcfafe;
+  border-left: 6px solid #4d1a9d;
+  box-shadow: 0px 0px 5px #e9ebfa;
+  border-radius: 0.5em;
+  padding: 20px;
+}
+
+.button-native {
+  background: #4d1a9d;
+  border-radius: 2em;
+  padding: 0px 40px;
+}
+
+.ion-text-center {
+  padding: 10px;
+}
+
+ion-content {
+  --background: #34B0D2 url('../../../assets/img/ondas.png') no-repeat center top fixed;
+
+
+}

@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar>
+    <!-- <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="" color="primary" mode="ios">
+      </ion-back-button> 
+    </ion-buttons> -->
+    <ion-buttons slot="end">
+      <ion-button color="danger" (click)="closeModal()">
+        Cerrar
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-capitalize">{{isUpdate ? 'Editar' : 'Agregar'}} personal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <ion-item>
+      <ion-label position="floating">Nombre </ion-label>
+      <ion-input [(ngModel)]="data.nombre" name="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Apellido Paterno</ion-label>
+      <ion-input [(ngModel)]="data.apellido_p" name="apellido_p"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Apellido Materno</ion-label>
+      <ion-input [(ngModel)]="data.apellido_m" name="apellido_m"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Télefono</ion-label>
+      <ion-input [(ngModel)]="data.telefono" name="telefono"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Correo</ion-label>
+      <ion-input [(ngModel)]="data.correo" name="correo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Sueldo</ion-label>
+      <ion-input [(ngModel)]="data.sueldo" name="sueldo"></ion-input>
+    </ion-item>
+
+    <div *ngIf="isUpdate">
+      <ion-item>
+        <ion-label position="floating">ID empresa</ion-label>
+        <ion-input [(ngModel)]="data.id_empresa.id_empresa" name="id_empresa"></ion-input>
+      </ion-item>
+    </div>
+
+    <div *ngIf="!isUpdate">
+      <ion-item>
+        <ion-label position="floating">ID empresa</ion-label>
+        <ion-input [(ngModel)]="data.id_empresa" name="id_empresa"></ion-input>
+      </ion-item>
+    </div>
+
+
+    <ion-button type="submit" fill="outline" expand="block" color="primary" class="ion-margin-top">
+      {{isUpdate ? 'Editar' : 'Agregar'}}</ion-button>
+  </form>
+</ion-content>

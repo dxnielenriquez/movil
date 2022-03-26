@@ -7,6 +7,8 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductoModalPage } from './producto-modal/producto-modal.page';
+import { PersonalModalPage } from './personal-modal/personal-modal.page';
+
 import { HttpClientModule } from '@angular/common/http';
 
 //nuevos imports
@@ -16,7 +18,7 @@ import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
-  entryComponents: [ProductoModalPage],
+  entryComponents: [ProductoModalPage, PersonalModalPage],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
