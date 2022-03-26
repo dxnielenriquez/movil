@@ -1,5 +1,7 @@
 <ion-content class="background-image">
-
+  <ion-refresher slot="fixed" (ionRefresh)="recargar($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
   <ion-header class="ion-no-border">
     <ion-toolbar color='#145DA0'>
       <ion-buttons slot="start">

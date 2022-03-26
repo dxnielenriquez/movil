@@ -27,6 +27,13 @@ export class ProductosPage implements OnInit {
   }
 
 
+  //metodo para recargar la lista de productos
+  recargar(event) {
+    setTimeout(() => {
+      this.getProductos();
+      event.target.complete();
+    }, 2000);
+  }
   getProductos() {
     this.productoService.getAll().subscribe(
       resp => {
@@ -60,6 +67,10 @@ export class ProductosPage implements OnInit {
     }).then(alertEl => alertEl.present());
 
   }
+
+
+
+
   addProducto() {
     this.modalCtrl.create({
       component: ProductoModalPage
@@ -70,7 +81,7 @@ export class ProductosPage implements OnInit {
     })
       .then(({ data, role }) => {
         if (role == "creado") {
-          this.productos.push(data);
+          //   this.productos.push(data); 
         }
       }
       );
